@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Distancia entre dos puntos</title>
+    <title>Área de un triángulo usando el semiperímetro</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,16 +14,16 @@
 
 <body>
 
-        <div class="container mt-3">
-                <h1>Distancia entre dos puntos</h1>
-        
-                <div class="jumbotron mt-2">
+    <div class="container mt-3">
+        <h1>Área de un triángulo usando el semiperímetro</h1>
+
+        <div class="jumbotron mt-2">
 
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Punto A en "X"</label>
-                        <input type="number" min="0" name="" id="puntoAX" class="form-control" placeholder="Punto A"
+                        <label for="">Lado A</label>
+                        <input type="number" min="0" name="" id="ladoA" class="form-control" placeholder="Lado A"
                             aria-describedby="helpId">
                     </div>
                 </div>
@@ -32,8 +32,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Punto A en "Y"</label>
-                        <input type="number" min="0" name="" id="puntoAY" class="form-control" placeholder="Punto A"
+                        <label for="">Lado B</label>
+                        <input type="number" min="0" name="" id="ladoB" class="form-control" placeholder="Lado B"
                             aria-describedby="helpId">
                     </div>
                 </div>
@@ -42,35 +42,39 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Punto B en "X"</label>
-                        <input type="number" min="0" name="" id="puntoBX" class="form-control" placeholder="Punto B"
+                        <label for="">Lado C</label>
+                        <input type="number" min="0" name="" id="ladoC" class="form-control" placeholder="Lado C"
                             aria-describedby="helpId">
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="">Punto B "Y"</label>
-                        <input type="number" min="0" name="" id="puntoBY" class="form-control" placeholder="Punto B"
-                            aria-describedby="helpId">
-                    </div>
-                </div>
-            </div>
-
 
             <div class="row">
                 <div class="col-12">
                     <button type="button" name="" id="btnCalcular"
-                        class="btn btn-outline-primary btn-lg btn-block">Calcular Distancia entre punto A y B</button>
+                        class="btn btn-outline-primary btn-lg btn-block">Calcular Semiperimetro</button>
                 </div>
             </div>
 
             <div class="row mt-2">
                 <div class="col-12">
                     <div class="alert alert-primary" role="alert">
-                        <h4 class="alert-heading">La distancia final es: <span id="resultado"></span> </h4>
+                        <h4 class="alert-heading">El semiperimetro es: <span id="resultado"></span> </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" name="" id="btnCalcular2"
+                        class="btn btn-outline-primary btn-lg btn-block">Calcular área del triangulo</button>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <div class="alert alert-primary" role="alert">
+                        <h4 class="alert-heading">El área del triangulo es: <span id="resultado2"></span> </h4>
                     </div>
                 </div>
             </div>
