@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Área de un triángulo usando el semiperímetro</title>
+    <title>Pago por consumo de agua al llenar una alberca</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,15 +15,15 @@
 <body>
 
     <div class="container mt-3">
-        <h1>Área de un triángulo usando el semiperímetro</h1>
+        <h1>Pago por consumo de agua al llenar una alberca</h1>
 
         <div class="jumbotron mt-2">
 
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Lado A</label>
-                        <input type="number" min="0" name="" id="ladoA" class="form-control" placeholder="Lado A"
+                        <label for="">Largo</label>
+                        <input type="number" min="0" name="" id="largo" class="form-control" placeholder="Largo de la alberca"
                             aria-describedby="helpId">
                     </div>
                 </div>
@@ -32,8 +32,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Lado B</label>
-                        <input type="number" min="0" name="" id="ladoB" class="form-control" placeholder="Lado B"
+                        <label for="">Ancho</label>
+                        <input type="number" min="0" name="" id="ancho" class="form-control" placeholder="Ancho de la alberca"
                             aria-describedby="helpId">
                     </div>
                 </div>
@@ -42,24 +42,34 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Lado C</label>
-                        <input type="number" min="0" name="" id="ladoC" class="form-control" placeholder="Lado C"
+                        <label for="">Profundidad</label>
+                        <input type="number" min="0" name="" id="profun" class="form-control" placeholder="Profundidad de la alberca"
                             aria-describedby="helpId">
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="">Costo por litro</label>
+                            <input type="number" min="0" name="" id="litro" class="form-control" placeholder="Costo por litro"
+                                aria-describedby="helpId">
+                        </div>
+                    </div>
+                </div>
 
             <div class="row">
                 <div class="col-12">
                     <button type="button" name="" id="btnCalcular"
-                        class="btn btn-outline-primary btn-lg btn-block">Calcular Semiperimetro</button>
+                        class="btn btn-outline-primary btn-lg btn-block">Calcular Volumen</button>
                 </div>
             </div>
 
             <div class="row mt-2">
                 <div class="col-12">
                     <div class="alert alert-primary" role="alert">
-                        <h4 class="alert-heading">El semiperimetro es: <span id="resultado"></span> </h4>
+                        <h4 class="alert-heading">El volumen de la alberca es: <span id="resultado"></span> </h4>
                     </div>
                 </div>
             </div>
@@ -67,14 +77,14 @@
             <div class="row">
                 <div class="col-12">
                     <button type="button" name="" id="btnCalcular2"
-                        class="btn btn-outline-primary btn-lg btn-block">Calcular área del triangulo</button>
+                        class="btn btn-outline-primary btn-lg btn-block">Calcular costo por el llenado de la alberca</button>
                 </div>
             </div>
 
             <div class="row mt-2">
                 <div class="col-12">
                     <div class="alert alert-primary" role="alert">
-                        <h4 class="alert-heading">El área del triangulo es: <span id="resultado2"></span> </h4>
+                        <h4 class="alert-heading">El costo total es: <span id="resultado2"></span> </h4>
                     </div>
                 </div>
             </div>

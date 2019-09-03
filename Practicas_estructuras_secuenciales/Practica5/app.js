@@ -5,36 +5,37 @@ EventListener();
 
 function EventListener() {
 
-    btnCalcular.addEventListener('click', obtenerarea);
-    btncalcular2.addEventListener('click', obtenersemiperimetro);
+    btnCalcular.addEventListener('click', obtenerVolumen);
+    btncalcular2.addEventListener('click', obtenerCosto);
 }
 
-function obtenerarea() {
-    let ladoA = Number(document.getElementById('ladoA').value);
-    let ladoB = Number(document.getElementById('ladoB').value);
-    let ladoC = Number(document.getElementById('ladoC').value);
-    let semi = 0;
+function obtenerCosto() {
+    let largo = Number(document.getElementById('largo').value);
+    let ancho = Number(document.getElementById('ancho').value);
+    let profun = Number(document.getElementById('profun').value);
+    let lt = Number(document.getElementById('litro').value);
+    let vol = 0;
     let res = 0;
 
-    semi=(ladoA+ladoB+ladoC)/2;
-    res=Math.sqrt( semi*((semi-ladoA)*(semi-ladoB)*(semi-ladoC)));
+    vol=(largo*ancho*profun)*1000;
+    res=vol*lt;
 
 
-
-    let imprimirResultado = document.getElementById('resultado');
-
-    imprimirResultado.innerHTML = res;
-}
-
-function obtenersemiperimetro() {
-    let ladoA = Number(document.getElementById('ladoA').value);
-    let ladoB = Number(document.getElementById('ladoB').value);
-    let ladoC = Number(document.getElementById('ladoC').value);
-    let semi = 0;
-
-    semi=(ladoA+ladoB+ladoC)/2;
 
     let imprimirResultado = document.getElementById('resultado2');
 
-    imprimirResultado.innerHTML = semi;
+    imprimirResultado.innerHTML = "$"+res;
+}
+
+function obtenerVolumen() {
+    let largo = Number(document.getElementById('largo').value);
+    let ancho = Number(document.getElementById('ancho').value);
+    let profun = Number(document.getElementById('profun').value);
+    let vol = 0;
+
+    vol=(largo*ancho*profun)*1000;
+
+    let imprimirResultado = document.getElementById('resultado');
+
+    imprimirResultado.innerHTML = vol + " lts";
 }
