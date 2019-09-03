@@ -19,8 +19,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Velocidad Promedio</label>
-                        <input type="number" name="" id="vel" class="form-control" placeholder="Velocidad Promedio" aria-describedby="helpId">
+                        <label for="">Aciertos</label>
+                        <input type="number" name="" id="aciertos" class="form-control" placeholder="Número de Aciertos" aria-describedby="helpId">
                     </div>
                 </div>
             </div>
@@ -28,22 +28,31 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Distancia Recorrida</label>
-                        <input type="number" name="" id="dis" class="form-control" placeholder="Distancia Recorrida" aria-describedby="helpId">
+                        <label for="">Fallos</label>
+                        <input type="number" name="" id="fallos" class="form-control" placeholder="Número de Fallos" aria-describedby="helpId">
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12">
-                    <button type="button" name="" id="btnCalcular" class="btn btn-outline-primary btn-lg btn-block">Calcular distancia</button>
+                    <div class="form-group">
+                        <label for="">En blanco</label>
+                        <input type="number" name="" id="blanco" class="form-control" placeholder="Número de respuestas en blanco" aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" name="" id="btnCalcular" class="btn btn-outline-primary btn-lg btn-block">Calcular Puntaje Final</button>
                 </div>
             </div>
 
             <div class="row mt-2">
                 <div class="col-12">
                     <div class="alert alert-primary" role="alert">
-                        <h4 class="alert-heading">La distancia recorrida es: <span id="resultado"></span> </h4>
+                        <h4 class="alert-heading">El puntaje final es: <span id="resultado"></span> </h4>
                     </div>
                 </div>
             </div>
