@@ -1,22 +1,33 @@
 let btnVerificar=document.getElementById('btnVerificar');
+let imprimirREsultado = document.getElementById('imprimir');
+let n1=document.getElementById('n1');
+let n2=document.getElementById('n2');
 
 
 eventListener();
 
 function eventListener(){
+    n1.addEventListener('blur',validarDatos);
+    n2.addEventListener('blur',validarDatos);
     btnVerificar.addEventListener('click',verificarMayor);
 }
 
 function verificarMayor(){
-    let n1=Number(document.getElementById('n1').value);
-    let n2=Number(document.getElementById('n2').value);
-    let imprimirREsultado = document.getElementById('imprimir');
-
-    if(n1>n2){        
-        imprimirREsultado.innerHTML = 'Numero 1 es mayor';
-    }else if(n1<n2){
-        imprimirREsultado.innerHTML = 'Numero 2 es mayor';    
+    if(Number(n1.value)>Number(n2.value)){        
+        imprimirREsultado.innerText = 'Numero 1 es mayor';
+    }else if(Number(n1.value)<Number(n2.value)){
+        imprimirREsultado.innerText = 'Numero 2 es mayor';    
     }else{
-        imprimirREsultado.innerHTML = 'Ambos son iguales';
+        imprimirREsultado.innerText = 'Ambos números son iguales son iguales';
+    }
+}
+
+function validarDatos(event){
+    console.log(event.target.value);
+    if(isNaN(event.target.value)){
+        event.target.focus();
+        imprimirREsultado.innerHTML = 'No es un número';
+    }else{
+        imprimirREsultado.innerHTML = '';
     }
 }
