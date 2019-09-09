@@ -10,10 +10,10 @@ eventListener();
 function eventListener(){
     per.addEventListener('blur',validarDatos);
     // km.addEventListener('blur',validarDatos);
-    btnVerificar.addEventListener('click',promedio);
+    btnVerificar.addEventListener('click',tipobus);
 }
 
-function promedio(){
+function tipobus(){
     let res=0;
     let personas=Number(per.value);
     //menor a 20 personas
