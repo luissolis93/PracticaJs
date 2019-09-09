@@ -41,7 +41,7 @@ function estacionamiento(){
         res=(numH*5)+(aux*2)+(aux2*3)+(aux3*4);               
         imprimirREsultado.innerHTML= `<p>Costo de la tarifa de estacionamiento es de $${res} `
     }else{
-
+        imprimirREsultado.innerHTML= `<p>No se ingreso al estacionamiento `
     }
       
     
