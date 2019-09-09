@@ -12,10 +12,10 @@ eventListener();
 function eventListener(){
     precio.addEventListener('blur',validarDatos);
     kg.addEventListener('blur',validarDatos);
-    btnVerificar.addEventListener('click',tipobus);
+    btnVerificar.addEventListener('click',preciouva);
 }
 
-function tipobus(){
+function preciouva(){
     let res=0;
     let aux=0;
     let kilo=Number(kg.value);
