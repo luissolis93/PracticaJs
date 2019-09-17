@@ -1,47 +1,21 @@
-let btnAgregarSalario=document.getElementById('btnAgregarSalario');
-let sal=document.getElementById('salario');
-let cont=0;
-
+let btnVerificar=document.getElementById('btnVerificar');
+let imp=document.getElementById('imprimir');
 
  eventListener();
 
 
 function eventListener(){
-    btnAgregarSalario.addEventListener('click',AgregarSalario);
+    btnVerificar.addEventListener('click',km);
 }
 
-function AgregarSalario(){
+function km(){
+    let n1=70;
+    let n2=150;
 
-    if(cont < 6){
-    cont++;
+    do{
+        n1+=100;
+        n2+=100;
 
-    let salario=Number(document.getElementById('salarioSemanal').value)*Number(sal.value);
-    console.log(salario);
-
-    let spanSalario=document.createElement('span'); 
-    spanSalario.setAttribute('id',`SalarioSemanal${cont}`);
-        
-    let textospan=document.createTextNode(`${salario}`);
-    spanSalario.appendChild(textospan);
-
-    let imprimirSpan=document.getElementById(`dia${cont}`);
-
-    imprimirSpan.appendChild(spanSalario);
-
-    CalcularSalario();
-}
-
-
-function CalcularSalario(){
-    let imprimirTotal=document.getElementById('total');
-    let suma=0;
-    for(let x=1; x<=cont; x++){
-        let valorObtenido=document.getElementById(`SalarioSemanal${x}`).textContent;
-        suma+=Number(valorObtenido);
-
-    }
-    imprimirTotal.innerHTML=`<span> $${suma} </span>`
-
-}
-
+    }while(n1!=n2);
+    imp.innerHTML=`Se alcanzan en el KM ${n1}`
 }

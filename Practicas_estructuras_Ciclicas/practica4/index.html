@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Salario Semanal</title>
+    <title>Serie ULAM</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,52 +14,23 @@
 
 <body>
 
-    <div class="container">
-        <div class="jumbotron">
+    <div class="container mt-3">
+        <h1>Ejercicio 4</h1>
+        <div class="jumbotron mt-2">
+
+
 
             <div class="row">
-                <div class="col-6">
-
-                    <div class="row">
-                        <div class="col-12">
-
-                            <div class="form-group">
-                                <label for="">Ingrese las horas diarias</label>
-                                <input type="number" name="" id="salarioSemanal" class="form-control"
-                                    placeholder="Ingresar cantidad" aria-describedby="helpId">
-                            </div>
-
-                            <div class="form-group">
-                                    <label for="">Ingrese el salario</label>
-                                    <input type="number" name="" id="salario" class="form-control"
-                                        placeholder="Ingresar cantidad" aria-describedby="helpId">
-                                </div>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <button type="button" name="" id="btnAgregarSalario"
-                                class="btn btn-outline-dark btn-lg btn-block">Agregar horas diarias</button>
-                        </div>
-                    </div>
-
+                <div class="col-12">
+                    <button type="button" name="" id="btnVerificar"
+                        class="btn btn-outline-dark btn-lg btn-block">Imprimir Resultado</button>
                 </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-12">
-                            <ul class="list-group">
-                                <li class="list-group-item" id="dia1"><span> Lunes: </span></li>
-                                <li class="list-group-item" id="dia2"><span> Martes: </span></li>
-                                <li class="list-group-item" id="dia3"><span> Miercoles: </span></li>
-                                <li class="list-group-item" id="dia4"><span> Jueves: </span></li>
-                                <li class="list-group-item" id="dia5"><span> Viernes: </span></li>
-                                <li class="list-group-item" id="dia6"><span> Sabado: </span></li>
-                                <li class="list-group-item" id="total"><span> Total: </span></li>
+            </div>
 
-                            </ul>
-                        </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="alert alert-info" role="alert">
+                        <h4 class="alert-heading"><span id="imprimir"></span></h4>
                     </div>
                 </div>
             </div>
