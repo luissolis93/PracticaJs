@@ -13,8 +13,8 @@ function km(){
     let n2=150;
 
     do{
-        n1+=100;
-        n2+=100;
+        n1+=1;
+        n2-=1;
 
     }while(n1!=n2);
     imp.innerHTML=`Se alcanzan en el KM ${n1}`
