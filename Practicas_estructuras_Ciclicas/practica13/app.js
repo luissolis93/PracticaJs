@@ -10,31 +10,23 @@ function eventListener(){
 }
 
 function primos(){
-    let ax = Number(numero.value);  
-    let aux=ax;  
+    let n = Number(numero.value);  
+    let aux=0;
     let resultado = '';
 
-    for(let x=0; x<=aux; x++){
-
-    for(let i=1; i < (ax+1); i++){
-         if(ax%i==0){
-            cont++;
+    for(let i=1; i<=n; i++){
+            for(let j =n ; j== 1 ; j--){
+                
+                
             }
-    }
-    if(cont!=2){
-        cont=0;
-        ax--;
+        }
 
-    }else{
-        resultado += `  ${ax}-  ` ;
-        ax--;
-        cont=0;
-    }
+  
+   
 
 
-}
-resultado += `  1  ` ;
+      
+
 
 imprimirREsultado.innerHTML = resultado;
 }
-
