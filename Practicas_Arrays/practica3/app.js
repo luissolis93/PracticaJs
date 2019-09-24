@@ -4,7 +4,6 @@ let imprimir=document.getElementById('imprimir');
 let imprimir2=document.getElementById('imprimir2');
 let arrayNumeros=[];
 let arrayPares=[];
-let contLetras=0;
 let resultado="";
 let resultado2="";
 let lim=0;
