@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor{
+    background: rgb(189,186,186);
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+}
+
+.contenedor span{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: red;
+    display: block;
+    position: absolute;
+}
